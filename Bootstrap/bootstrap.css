@@ -1,0 +1,19 @@
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.purple{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .2);
+}
+.layout{
+    padding: .75rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+}
+
+

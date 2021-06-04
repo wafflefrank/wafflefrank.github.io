@@ -1,0 +1,87 @@
+.gray{
+    background-color: #F8F9FA !important;
+}
+body{
+    font-family:'Noto Sans TC' , sans-serif;
+}
+.ff-num{
+font-family: 'Baloo Tamma 2' , cursive;
+}
+.modal-header{
+    border-top: 5px #ffc107 solid;
+}
+.nav .active {
+    font-weight: bold;
+    border-bottom: 2px solid #ffc107;
+    }
+
+.cutborder{
+    border-radius: 32px;
+}    
+.text-justify{
+    text-align: justify;
+    line-height: 32px;
+}
+.btn-hover:hover{
+    transition: 0.7s;
+    background:#c2a248;
+    transform: scale(1.2) rotate(360deg);
+    color: #5e5027 !important;
+    border: none;
+}
+.btn-hover2:hover{
+    transition: 0.7s;
+    background: #41320860;
+    transform: scale(1.2) rotate(360deg);
+    color:white !important;
+    border: none;
+}
+.heart-hover:hover{
+    transition: 0.7s;
+    background: #dba759;
+    color:white !important;
+    border: none;
+}
+.heart-hover:hover>i{
+    transition: 0.7s;
+    color:rgba(136, 18, 44, 0.877);
+    border: none;
+}
+.share-hover:hover{
+    transition: 0.7s;
+    background: #41320860;
+    color:white !important;
+    border: none;
+}
+.share-hover:hover>i{
+    transition: 0.7s;
+    color:#ffc107;
+    border: none;
+}
+.donate-hover:hover{
+    transition: 0.7s;
+    background: #dba759;
+    color:white !important;
+    
+}
+
+.top-nav{
+    top: 90px;
+}
+
+.contact-hover:hover{
+    transition: 0.7s;
+    background: #41320860;
+    color:white !important;
+}
+
+.contact-hover:hover>i{
+    transition: 0.7s;
+    color:#ffc107;
+}
+.yellow-cube{
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 700;
+}

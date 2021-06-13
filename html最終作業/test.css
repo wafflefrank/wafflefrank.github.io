@@ -1,0 +1,9 @@
+.border12{
+    box-shadow: 2px 2px 1px rgba(56, 119, 105, 0.548),0 0 8px rgba(5, 37, 41, 0.6);
+}
+.shadow12{
+    box-shadow: -7px 7px 10px rgba(128, 128, 128, 0.795);
+}
+.shadow13{
+    box-shadow: 7px 7px 10px rgba(128, 128, 128, 0.795);
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name='description' content='網站描述文字' />
+    <meta name="keywords" content="HTML, CSS, Final Project">
+    <meta property="og:title" content="FB的標題" />
+    <meta property="og:description" content="FB的描述">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="FB上的網址" />
+    <meta property="og:image" content="FB的圖片" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六角咖啡館</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="header position-relative">
+                <div class="title">
+                    <a href="#" class="logo">Frank Logo</a>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                     <div class="txtbox position-absolute start-0 bottom-0 mb-4 ms-3">
+                        <p>Welcome to <span>Hex Cafe</span> <br>
+                            Enjoy your coffee and take your time.</p>
+                       
+                            <button class="greenbtn d-flex align-items-center fs-5 fw-bold  ps-4 mt-2">More<img src="https://i.imgur.com/LDKRxsc.png" alt="#"></button>   
+                        
+                     </div>
+               
+            </div>
+        </div>
+        <div class="content">
+            <div class="title2">
+                <h3>精選咖啡<span>身為前端工程師的你(妳)都該來一杯</span></h3>
+                <a href="#">更多咖啡</a>
+            </div>
+            <ul class="coffeeInfo">
+                <li>
+                    <div class="pic">
+                        <img src="https://i.imgur.com/9NQ3Tx2.jpg" alt="#">
+                    </div>
+                    <div class="txt">
+                        <h3>卡布奇諾</h3>
+                        <p>以三分之一的黃金比例，將濃縮咖啡、熱牛奶、奶泡均勻呈現 !</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <img src="https://i.imgur.com/6uLO6yh.jpg" alt="#">
+                    </div>
+                    <div class="txt">
+                        <h3>義式濃縮</h3>
+                        <p>特定的沖煮方式與定義
+                            ，不苦澀且不會造成心悸的咖啡，才能被稱作<span>espresso </span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <img src="https://i.imgur.com/q0HtMY1.jpg" alt="#">
+                    </div>
+                    <div class="txt">
+                        <h3>耶加雪菲</h3>
+                        <p>口感酸質濃郁卻柔軟宜人，層次滋味由酸至甜再到回甘，詮釋著恰到好處的平衡。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="compare">
+            <div class="title3">
+                <h3>咖啡比較<span>烘培度與處理法</span></h3>
+            </div>
+            <table class="compare-items">
+                <tr>
+                    <th class="country">項目\國家</th>
+                    <th>哥倫比亞</th>
+                    <th>巴西</th>
+                    <th>巴拿馬</th>
+                </tr>
+                <tr>
+                    <td>費用</td>
+                    <td>較低</td>
+                    <td>較低</td>
+                    <td class="special">較高</td>
+                </tr>
+                <tr>
+                    <td>烘培度</td>
+                    <td>淺培</td>
+                    <td>中深培</td>
+                    <td class="special">深培</td>
+                </tr>
+                <tr>
+                    <td>處理法</td>
+                    <td>水洗處理</td>
+                    <td class="special">果漿日曬</td>
+                    <td>酵母處理</td>
+                </tr>
+
+            </table>
+        </div>
+
+
+        <form class="message" action="#">
+            <h4>喜愛咖啡的你，<br>加入會員，享有咖啡<span>8</span>折外，另有特調優惠！</h4>
+            <div class="message-items">
+                <input type="text" placeholder="Your Name?" name="Name" class="txt"><br>
+                <input type="text" placeholder="example@mail.com" name="email" class="txt"><br>
+                <input type="button" value="送出" class="submitBtn">
+            </div>
+        </form>
+        <div class="footer">
+            <a href="#" class="footerLogo">恒瑀LOGO </a>
+            <ul class="app">
+                <li><a href="#"><img src="https://i.imgur.com/fZbz9Om.png"></a></li>
+                <li><a href="#"> <img src="https://i.imgur.com/Y851VG0.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="https://i.imgur.com/gjW38CI.png" alt="ig"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -462,7 +462,7 @@ height : auto ;
 }
 
 /* 表頭主體背景 */
-.qaBackground{
+.qa-header{
 	background:linear-gradient(rgba(230, 101, 101, 0.027),#a79b84) , url("https://i.imgur.com/H39a10u.jpg")  ;
     background-repeat:no-repeat ;
     height: 560px;

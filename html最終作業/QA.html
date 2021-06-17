@@ -2,56 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="final.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>咖啡迷思</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="final.css">
 </head>
 
 <body>
-    <div class="wrap ">
-  <div class="container qaBackground ">
-    <nav class="navbar navbar-expand-lg navbar-light fs-2 fw-bold  ">
+  <div class="wrap">
+    <!--問答頁-表頭 -->
+    <div class="container qaBackground ">
+      <nav class="navbar navbar-expand-lg navbar-light fs-2 fw-bold  ">
         <div class="container-fluid ">
-          <a class="navbar-brand fs-2" href="#"><img src="https://i.imgur.com/PoXF1gU.png " alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand fs-2" href="index.html"><img src="https://i.imgur.com/PoXF1gU.png " alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse " id="navbarNav">
             <ul class="navbar-nav ms-auto ">
-              <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              <li class="nav-item me-3">
+                <a class="nav-link  text-white qatitle" aria-current="page" href="index.html">Home</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link text-white" href="#">Features</a>
+              <li class="nav-item me-3">
+                <a class="nav-link text-white qatitle" href="product.html">Product</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Pricing</a>
+              <li class="nav-item me-3">
+                <a class="nav-link text-white qatitle" href="QA.html">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
+
             </ul>
           </div>
         </div>
-     </nav>
-      <div class="qabanner">
-      <h2 class="text-center fw-bolder mb-5  fs-2">遇到問題了嗎？</h2>
-      <p class="text-center ">別擔心，你想找的答案都在這裡！</p>
-    </div>
+      </nav>
+      <div class="qabanner d-flex flex-column justify-content-center align-items-center">
+        <h2 class="fw-bolder mb-5  fs-2">遇到問題了嗎？</h2>
+        <p class=" text-white fw-bold fs-4 mb-5">別擔心，你想找的答案都在這裡！</p>
+        <div class="searchArea">
+          <input type="text" placeholder="讓恒瑀來替您解決任何問題" class="rounded-3  py-2 qasearch border-0">
+          <i class="fas fa-search fs-2 searchIcon"></i>
+        </div>
+      </div>
     </div>
 
+    <!-- 問答頁-主內容 -->
+    <div class="content">
+      <div class="container">
+        <hr class="mt-5" style="height: 5px; color: teal;">
+        <h3 class="fs-1 mt-5 deepGreen fw-bolder mb-3">常見問題</h3>
+        <!-- 問答Q1~Q3 -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- Q1 -->
+          <div class="accordion-item mb-5 border border-2 border-gray rounded-3 ">
+            <h2 class="accordion-header " id="flush-headingOne">
+              <button class="accordion-button collapsed clickStyle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <span class="green-cube me-3">Q1</span>
+                <span class="fw-bolder fs-5 pt-1">咖啡每天可以喝幾杯 ?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body pt-4 fw-bold">「每天最多喝<span class="ff-num text-danger fw-bold"> 1 ~ 3 </span>杯的咖啡量」</div>
+            </div>
+          </div>
+          <!-- Q2 -->
+          <div class="accordion-item mb-5 border border-2 border-gray rounded-3">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed clickStyle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <span class="green-cube me-3">Q2</span>
+                <span class="fw-bolder fs-5 pt-1">喝咖啡能提神 ?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body pt-4 fw-bold">「有人喝咖啡之後會睡不著，但也有人照睡不誤，每個人應當依自己的體質適量飲用咖啡」
+              </div>
+            </div>
+          </div>
+          <!-- Q3 -->
+          <div class="accordion-item mb-5 border border-2 border-gray rounded-3">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed clickStyle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <span class="green-cube me-3">Q3</span>
+                <span class="fw-bolder fs-5 pt-1">孕婦不能喝咖啡 ?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body pt-4 fw-bold">「根據資料顯示，早期胚胎不穩定時，若孕婦過量飲用咖啡，咖啡因攝取量和增加流產率呈正比關係。」
+              </div>
+            </div>
+          </div>
+          
+          <!-- 聯絡我們 -->
+          <form class="message mt-5" action="#">
+            <h4>喜愛咖啡的你，<br>加入會員，享有咖啡<span>8</span>折外，另有特調優惠！</h4>
+            <div class="message-items me-5  ">
+                <input type="text" placeholder="Your Name?" name="Name" class="txt"><br>
+                <input type="text" placeholder="example@mail.com" name="email" class="txt"><br>
+                <textarea  rows="10" placeholder="How can I help you?" class="txt"></textarea><br>
+                <input type="button" value="留言" class="submitBtn pt-2 ">
+            </div>
+        </form>
+        <div class="footer">
+            <a href="#" class="footerLogo">恒瑀LOGO </a>
+            <ul class="app">
+                <li><a href="#"><img src="https://i.imgur.com/fZbz9Om.png"></a></li>
+                <li><a href="#"> <img src="https://i.imgur.com/Y851VG0.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="https://i.imgur.com/gjW38CI.png" alt="ig"></a></li>
+            </ul>
         </div>
-        
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    
   </div>
 
 </body>
-https://i.imgur.com/PoXF1gU.png  https://i.imgur.com/H39a10u.jpg
 
 </html>

@@ -300,26 +300,27 @@ height : auto ;
 .message-items .submitBtn{
 	width: 100px;
 	height: 50px;
-	border: none;
+	border:2px solid ;
 	border-radius: 10px;
 	font-size: 18px;
-	color: white;
-	background:rgb(70, 148, 148) ;
+	color:  rgb(8, 95, 84);
+	background:white;
 	cursor: pointer;
 	align-self: flex-end;
+	font-weight: 700;
 }
 /* 送出資料特效 */
-.message-items input:focus{
+.message-items input:focus,textarea:focus{
 	border-color: #20c29f;
     outline: 0;
     box-shadow:inset 0 1px 1px rgba(36, 127, 155, 0.603),0 0 8px rgba(29, 155, 128, 0.733);
 }
 .message-items .submitBtn:hover{
-	color: rgb(255, 255, 255);
-	background: rgb(8, 95, 84);
+	color:white;
+	background: rgb(70, 148, 148);
 	transition: 0.5s;
-	font-size: 25px;
-	opacity: 0.6;
+	font-weight: 700;
+	border: none;
 }
 
 
@@ -448,17 +449,81 @@ height : auto ;
 
 /*              QA 頁面                  */
 
+.ff-num{
+	font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.deepGreen{
+	color: teal;
+}
+
 .bg-xlight{
 	background-color: rgba(110, 85, 39, 0.342);
 }
 
+/* 表頭主體背景 */
 .qaBackground{
-	background-image: url("https://i.imgur.com/H39a10u.jpg")  ;
+	background:linear-gradient(rgba(230, 101, 101, 0.027),#a79b84) , url("https://i.imgur.com/H39a10u.jpg")  ;
     background-repeat:no-repeat ;
     height: 560px;
 }
 .qabanner{
 	margin-top: 150px;
 }
+/* 表頭nav特效 */
+.qatitle:hover{
+	color: teal !important;
+	transition: 0.7s;
+	border-radius: 5px;
+	background:rgba(255, 255, 255, 0.795);	
+}
+.qasearch{
+	width: 400px;
+}
 
+.searchArea{
+ position: relative;
+}
 
+/* 搜尋文字介面特效 */
+.qasearch:focus{
+	border-color: #20c29f;
+    outline: 0;
+    box-shadow:inset 0 1px 1px rgba(36, 127, 155, 0.603),0 0 8px rgba(29, 155, 128, 0.733);
+}
+/* 搜尋放大鏡圖片顏色 */
+.searchIcon{
+	color:teal;
+	cursor: pointer;
+	position: absolute;
+	right:10px;
+	top:5px;
+} 
+
+/* 問答邊框樣式 */
+.border-gray{
+	border-color: rgba(78, 57, 19, 0.336) !important;
+}
+
+/* Q1~Q3樣式 */
+.green-cube{
+	background: teal;
+	font-weight: 700;
+	font-size: 18px;
+	font-family: 'Baloo Tammudu 2', cursive;
+	border-radius: 5px;
+	color: rgba(255, 255, 255, 0.911);
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5px;
+}
+/* Q1~Q3點擊下拉特效 */
+.clickStyle:focus{
+	border-color: #20c29f;
+    outline: 0 ;
+    box-shadow:inset 0 1px 1px rgba(36, 127, 155, 0.603),0 0 8px rgba(29, 155, 128, 0.733) ;
+}

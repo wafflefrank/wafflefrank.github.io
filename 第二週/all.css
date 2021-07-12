@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing:border-box;
+  }
+body{
+    font-family:  'Roboto', sans-serif;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1920px;
+}
+
+.fz-sm{
+    font-size: 24px;
+    font-weight: 400;
+}
+.fz-md{
+    font-size: 64px;
+    font-weight: 500;
+}
+.fz-lg{
+    font-size: 80px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-56{
+    margin-bottom: 56px;
+}
+.mb-68{
+    margin-bottom: 68px;
+}
+.pb-64{
+    padding-bottom: 64px;
+}
+.pt-64{
+    padding-top: 64px;
+}
+.banner{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week2/banner.png?raw=true);
+    height: 958px;
+    background-repeat: no-repeat;
+    color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 56px;
+}
+.banner-title{
+    text-align: center;
+}
+.banner-title h1{
+    text-align: left;
+   line-height: 1.325;
+   margin-bottom: 32px;
+}
+.banner-title p{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.banner-img{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    text-align: center;
+}
+.content p{
+    line-height: 42px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.line{
+    margin: 24px  auto 28px auto;
+    border-bottom : #000 1px solid ;
+}
+.content-exp li{
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red-circle{
+width: 22px;
+height: 22px;
+background: #891818;
+color: #891818 ;
+border-radius: 50%;
+margin-right: 16px;
+display: block;
+}
+.brand{
+    background:#000;
+    color:#fff;
+}
+.brand h3{
+    padding-top: 56px;
+    margin-bottom: 12px;
+}
+.brand-info p{
+ font-size: 20px;
+font-weight: 500;
+}
+.brand-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-img li img{
+    margin:0 12px;
+    display: block;
+    margin-bottom: 160px;
+}
+.ability{
+    font-size: 20px;
+    line-height: 30px;
+}
+.works-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1400px;
+    margin: 0 auto;
+}
+.works-img li{
+    margin-right: 24px;
+}
+.works-img li p{
+    margin: 16px 0 48px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer{
+    background: #000;
+    color: #fff;
+    text-align: center;
+}

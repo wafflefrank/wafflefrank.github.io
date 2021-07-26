@@ -1,0 +1,696 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing:border-box;
+  }
+ 
+body{
+    font-family:  'Roboto','Noto Sans', sans-serif;
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+.text-primary{
+    color: #650300;
+}
+.text-white{
+    color: #FFFFFF;
+}
+.text-dark{
+    color: #000;
+}
+.bg-primary{
+    background-color: #650300;
+}
+.text-secondary{
+    color: #AA0601;
+}
+.bg-secondary{
+    background-color: #AA0601;
+}
+
+.mr-32{
+    margin-right: 32px;
+}
+.mt-24{
+    margin-top: 24px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mt-32{
+    margin-top: 32px;
+}
+.mt-42{
+    margin-top: 42px;
+}
+.mt-132{
+    margin-top: 132px;
+}
+.mt-48{
+    margin-top: 48px;
+}
+.mb-60{
+	margin-bottom: 60px;
+}
+.mb-32{
+	margin-bottom: 32px;
+}
+.ms-10{
+	margin-left: 10px;
+}
+.ms-30{
+	margin-left: 30px;
+}
+.me-10{
+	margin-right: 10px;
+}
+.me-15{
+   
+   margin-right: 15px;
+}
+.ms-15{
+    margin-left: 15px;   
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mb-96{
+    margin-bottom: 96px;
+}
+.me-22{
+    margin-right: 22px;
+}
+.me-30{
+	margin-right: 30px;
+}
+.me-48{
+    margin-right: 48px;
+}
+.ps-15{
+padding-left: 15px;
+}
+.pe-15{
+    padding-right: 15px;
+}
+.pe-30{
+    padding-right: 30px;
+}
+.pt-16{
+    padding-top: 16px;
+}
+.pt-32{
+    padding-top: 32px;
+}
+.pb-8{
+    padding-bottom: 8px;
+}
+.pb-16{
+    padding-bottom: 16px;
+}
+.pb-36{
+    padding-bottom: 36px;
+}
+.pb-52{
+    padding-bottom: 52px;
+}
+.pb-76{
+    padding-bottom: 76px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.fz-32{
+    font-size: 32px;
+}
+.justify-start{
+	justify-content: start;
+}
+.flex-row{
+	flex-direction: row-reverse;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+align-items: center;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+  .container{
+      max-width: 1110px;
+      margin: 0 auto;
+  }
+  
+  .banner{
+      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:center ;
+      height: 840px;
+  }
+  /* 表頭 */
+  .header{
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0px 30px 88px;
+      align-items: center;
+  }
+ .header h1 a{
+      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true");
+      white-space: nowrap;
+      text-indent: 101%;
+      overflow: hidden;
+      height: 49px;
+      width: 80px;
+      display: block;
+  }
+  .header li{
+      margin-right: 64px;
+
+      font-size: 20px;
+  }
+  .header li a{
+    
+      color: #FFFFFF;
+    display: block;   
+  }
+  .header li a:hover{
+      transition: 0.5s;
+      transform: scale(1.5);
+      color: rgb(237, 241, 170);
+      font-weight: bold;
+  }
+  
+  .header ul{
+      display: flex;
+  }
+  .banner{
+
+      text-align: end;
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+  }
+  .banner-content{
+      
+      margin-right: 405px;
+  }
+  .banner-content h1{
+    font-size: 36px;
+  }
+  .banner-content p{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 96px;
+  }
+  /* 用專業的心，做專業的事 */
+  .profashion{
+      background-color: #AA06010D;
+  }
+  .profashion-list{
+display: flex;
+justify-content: space-between;
+  }
+  .profashion h2{
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      padding-top: 60px;
+  }
+  .profashion-item{
+    width: 255px;
+}
+.profashion-img{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 48px 0 24px 0 ;
+}
+.profashion-item h3{
+    text-align: center;
+    font-size: 24px;
+    color:#650300;
+    font-weight: bold;
+}
+.profashion-item p{
+  text-align:left   ;
+  line-height: 24px;
+  margin: 8px 0  80px 0 ;
+  }
+  /* 經典系列 */
+.classic-glass{
+    text-align: center;
+}  
+.classic-glass ul li{
+    display: flex;
+    align-items: center;
+}
+.classic-title{
+    display: flex;
+}
+.classic-title p{
+	font-size: 48px;
+	color: #AA0601;
+    font-style: italic;
+}
+.classic-glass h2{
+	font-size: 48px;
+	font-weight: bold;
+	margin: 60px 0 40px 0 ;
+}
+
+.img-size{
+	width: 635px;	
+}
+/* 聯名設計 */
+.co-design{
+  
+    height: 705px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.co-design h2{
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 60px 0 40px 0 ;
+}
+.co-design ul{
+    display: flex;
+}
+.co-design  li{   
+    position: relative;
+    background-color:white ;
+    overflow: hidden;
+}
+.co-design li img{
+    opacity: 0.5;
+    display: block;
+}
+
+
+.co-design  li p{
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #AA0601;
+    font-size: 72px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  
+ }
+/* 顧客推薦 */
+ .recommend h2{
+    font-size: 48px;
+	font-weight: bold;
+	margin: 60px 0 40px 0 ;
+    text-align: center;
+ }
+ .recommend  ul{
+     display: flex;
+     
+ }
+ .recommend li{
+    width: 255px;
+    border:1px solid #DEE2E6;
+    border-radius:  50px 4px 0px 0px;
+    box-shadow: 0px 2px 6px #00000029;
+    padding-bottom: 16px;
+ }
+ .recommend li img{
+    border-radius:  4px 4px 0px 0px;
+ }
+ .recommend li h3{
+     font-size: 14px;
+     font-weight: 500;
+     margin: 16px 16px 8px 16px;
+    
+ }
+ .recommend li p{
+    margin: 0 16px 8px 16px;
+     line-height: 1.5;
+ }
+ .recommend li span{
+   color: #707070;
+    border: 1px solid;
+    font-size: 14px;
+    margin-left: 16px;
+}
+/* 聯絡我們 */
+.contact-info{
+    max-width: 730px;
+    margin: 0 auto;
+}
+.contact{
+   text-align: center;
+   background: #AA06010D;
+}
+.contact h2{
+    font-size: 48px;
+    font-weight: bold;
+    padding-top: 60px;
+    margin:60px 0 24px 0;
+}
+.contact p{
+    font-size: 20px;
+    text-align:start;
+}
+
+.form-group h3{
+    font-size: 16px;
+    text-align: start;
+}
+.box-content{
+    width: 100%;
+    padding: 14px 0 15px 16px;
+    background-color: #FBF2F2;
+    opacity: 1;
+    border: 1px solid black;
+    margin-bottom: 16px;
+}
+.text-start{
+    text-align: start;
+}
+.w-350{
+    width: 350px;
+    border: 0;
+}
+.w-350:hover{
+    transition: 0.5s;
+      color: rgb(237, 241, 170);
+      font-weight: bold;
+      background: #310302;
+}
+.boxStyle{
+   text-align: start;    
+}
+.fab{
+    font-size: 48px;
+}
+.footer-content img{
+   width: 36px;
+   height: 36px;
+}
+
+/* RWD */
+@media (max-width:992px){
+    .container{
+        max-width: 900px;
+    }
+    .banner-content h1{
+        font-size: 20px;
+    }
+    .banner-content {
+        font-size: 48px;
+        margin-right: 38.5px;
+    }
+    .classic-glass h2 , .co-design h2 , .co-design  li p , .recommend h2{
+        font-size: 32px;
+    }
+    .classic-title p{
+        font-size: 28px;
+    }
+
+    .img-size{
+        width: 550px;
+    }
+}
+@media (max-width:768px){
+    .container {
+        max-width:615px;
+        margin: 0 auto;
+    }
+    .header li{
+        margin-right: 40px;
+        font-size: 20px;
+    }
+    /* 專業的心..... */
+    .profashion-list{
+        flex-wrap: wrap;
+    }
+    .profashion-item{
+        max-width: 50%;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    /* 表頭背景 */
+    .banner-content h1{
+        font-size: 20px;
+    }
+    .banner-content {
+        font-size: 48px;
+        margin-right: 38.5px;
+    }
+    /* 經典系列 */
+    .classic-glass h2 , .co-design h2 , .co-design  li p , .recommend h2{
+        font-size: 32px;
+    }
+    .classic-title p{
+        font-size: 28px;
+    }
+    .classic-glass ul li{
+        flex-direction: row;   
+    }
+    .classic-title{
+        margin-left: 30px;
+    }
+    .img-size{
+        width: 390px;
+    }
+    .co-design{
+        height: 452px;
+    }
+    .recommend ul{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .recommend li{
+        width: 48%; 
+        margin: 15px 0%;
+    }
+   
+    .contact-info{
+        width: 450px;
+    }
+    .fab{
+        font-size: 24px;
+    }
+    .footer-list li { 
+        margin-right: 40px;
+    }
+    .footer-content img{
+        width: 18px;
+        height: 18px;
+     }
+     .footer-content a{
+         font-size: 20px;
+     }
+}
+@media (max-width:641px){
+    .img-size{
+        width: 350px;
+    }
+    .classic-title{
+        margin-left: 10px;
+    }
+}
+@media (max-width:576px){
+    .container{
+        max-width: 466px; 
+    }
+    .header{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header h1 a{
+       margin: 10px auto;
+    }
+    .header ul{
+        flex-wrap: wrap;
+    }
+    .header li {
+            width: 50%;
+            border: solid 1px #fff;  
+            margin: 0%;
+    }
+    .header li a{
+        padding: 8px 54px;
+        text-align: center;
+    }
+    .banner{
+        height: 394px;
+    }
+    .banner-content p{
+        font-size: 32px;
+    }
+    .banner-content h1{
+        font-size: 16px;
+    }
+    .profashion h2{
+        font-size: 24px;
+    }
+    .profashion-item{
+        max-width: 100%;
+        margin-bottom: -40px;
+    }
+    .profashion-list{
+        justify-content: center;
+    }
+    .img-size{
+        width:466px;
+    }
+    .classic-glass h2 , .co-design h2 , .contact h2{
+        font-size: 20px;
+    }
+    .classic-glass li{
+        position: relative;
+    }
+    .classic-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 28px;
+    }
+    .co-design{
+        height: 719px;
+    }
+    .co-design ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .co-design h2{
+        padding-top: 32px;
+        padding-bottom: 20px;
+    }
+    .co-design li{
+        max-width: 100%;
+        margin: 0 15px 15px 15px;
+    }
+    .co-design li img{
+        width: 345px;
+        height: 291px;
+    }
+    .recommend ul{
+        justify-content: center;
+    }
+    .recommend li img{
+        width: 345px
+    }
+    .recommend li{
+       width: 345px
+    }
+    .contact p{
+        font-size: 16px;
+    }
+    .footer{
+        padding: 24px 0;
+    }
+    .footer-list{
+        display: none;
+    }
+    .footer-content a{
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .copyRight{
+        flex-wrap: wrap;
+    }
+    .copyRight p{
+        font-size: 14px;
+        word-wrap: nowrap;
+    }
+    .copyRight ul{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .copyRight li{
+        margin-top: 8px;
+    }
+    .copyRight li a{
+        font-size: 14px;
+        width: 100%;
+        margin-top: 8px;
+    }
+    .footer-header{
+        align-items: center;
+        margin-top: 24px;
+    }
+    .footer-content{
+        margin-bottom: 12px;
+        margin-top: 0;
+    }
+    .footer-media{
+        margin-bottom: 42px;
+    }
+}
